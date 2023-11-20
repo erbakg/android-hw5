@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Your view where the image will be displayed -->
+
+            <View
+                android:id="@+id/triangleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/triangle"
+                android:rotation="180" />
+
+            <ImageView
+                android:id="@+id/absoluteImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="156dp"
+                android:layout_marginBottom="210dp"
+                android:src="@drawable/ic_owl" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:text="Login with Facebook"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="#D3d3d3"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="---OR---"
+            android:textColor="@color/button_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Up with Email"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="GAME NOW"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:cornerRadius="30dp" />
+    </LinearLayout>
+</LinearLayout>
